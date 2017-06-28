@@ -24,7 +24,9 @@ font-family: Lucida Grande;
   font-size: 46px;
   text-align:center;
   line-height: 48px;
-  margin: 20px auto 20px auto; }
+  margin: 20px auto 20px auto;
+  letter-spacing: 5px;
+   }
     
   img { border-radius:10px; margin-top:9px; }
   
@@ -32,11 +34,10 @@ font-family: Lucida Grande;
   border: 1px solid #D7263D;
   font-family: Lucida Grande;
   color: #D7263D;
-  font-size: 15px;
-  line-height: 38px;
+  font-size: 22px;
+  line-height: 40px;
   padding: 30px 10%;
   text-align: center;
-  text-transform: uppercase;
 }
 footer { clear:both; margin-top: 32px; text-align:right; padding-right:30px;}
 h2 a { text-decoration:none; color: #D7263D; }
@@ -44,4 +45,3 @@ h2 a:hover { color: #09F}
 
 ul { list-style:none;}
 ul li { text-align:right; padding-right:30px; float: right;}
-
