@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  background-image: -webkit-linear-gradient(#F9EBEA, #D5F5E3);
+  margin: 0px;
+  padding: 8px 72px;
+}
+
+.header { background-image: url(images/baku-night.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 380px;
+  width: 100%;
+  }
+  h1 { color: rgba(248, 249, 249, 0.5);
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 120px;
+  font-weight: 400;
+  margin-top: 16px;
+  text-align: center;
+  } 
+  
+  h2 { color: #AAA;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin:0;
+  padding-top:20px;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  
+  p { color: #333;
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 10px;
+  text-align: center;
+  }
+  
