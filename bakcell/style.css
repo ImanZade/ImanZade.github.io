@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body { background:#FF0000; }
-.header { background-image:url(../../../Documents/Adland%C4%B1r%C4%B1lmam%C4%B1%C5%9F%20Site%202/3bd4592dc0e6b2a7d3df67c84e736ed9.jpg); background-position:center; background-repeat:no-repeat; background-size:cover; height:300px; min-width:940px;}
+.header { background-image: url(3bd4592dc0e6b2a7d3df67c84e736ed9.jpg); background-position:center; background-repeat:no-repeat; background-size:cover; height:300px; min-width:940px;}
 .header p { font-family: 'Indie Flower', cursive; text-align: center; font-size:36px; margin:0; padding-top: 240px;}
 .post { font-family: 'Bellefair', serif; text-align:center; padding: 2% 20%;}
 h2 { font-size: 39px; text-decoration:none;}
