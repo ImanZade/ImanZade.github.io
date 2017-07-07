@@ -23,7 +23,7 @@ text-decoration: none; font-family: 'Anton', sans-serif; font-size: 23px; color:
   background-image: url(images/photo4.png); background-position: center; background-size: cover; background-attachment: fixed;
 }
 .photo4{
-  background-image: url(images/photo4.jpg); background-position: top-right; background-size: cover; background-attachment: fixed;
+  background-image: url(images/photo4.jpg); background-position: top-right; background-size: cover; background-attachment: fixed; position: relative;
 }
 .frame{
   border: 2px solid white; width: 88%; height: 78%; margin: auto;
@@ -35,8 +35,8 @@ text-decoration: none; font-family: 'Anton', sans-serif; font-size: 23px; color:
       font-family: 'Pacifico', cursive; font-size: 28px; text-align:center;color: #212F3C; padding-top:15px;
   }
 p{
-  font-family: 'Pacifico', cursive; font-size: 17px; text-align: center;color: #212F3C; padding-top: 15px;
+  font-family: 'Pacifico', cursive; font-size: 17px; text-align: center;color: #212F3C; padding-top: 15px; text-shadow: 1px 1px 1px #F6DDCC;
 }
 .info{
-  width: 36%; height: 86%; margin-left: 40%;
+  width: 36%; height: 86%; position: absolute; top: 10%;
 }
