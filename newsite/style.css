@@ -4,14 +4,14 @@
 body, html {
   width: 100%; height: 100%;
 }
-.nav{ line-height: 60px; text-align: center;text-transform: uppercase; position: fixed; z-index: 99; width: 100%;background-color:#839192;}
+.nav{ line-height: 60px; text-align: center;text-transform: uppercase; position: fixed; z-index: 99; width: 100%;background-color:#DE541E;}
 .nav a{
 text-decoration: none; font-family: 'Anton', sans-serif; font-size: 23px; color: white; margin-left: 24px;}
 .picture{
   width: 100%; height: 100%; background-color:red;
 }
 .text{
-  width: 100%; height: 50%; background-color: orange;
+  width: 100%; height: 50%; background-color:#B8DBD9;
 }
 .photo1{
   background-image: url(images/photo1.jpeg); background-position: center; background-size: cover; background-attachment: fixed;
@@ -23,13 +23,13 @@ text-decoration: none; font-family: 'Anton', sans-serif; font-size: 23px; color:
   background-image: url(images/photo4.png); background-position: center; background-size: cover; background-attachment: fixed;
 }
 .photo4{
-  background-image: url(images/photo4.jpg); background-position: top; background-size: cover; background-attachment: fixed;
+  background-image: url(images/photo4.jpg); background-position: top-right; background-size: cover; background-attachment: fixed;
 }
 .frame{
   border: 2px solid white; width: 88%; height: 78%; margin: auto;
 }
   h1 {
-    font-family: 'Abril Fatface', cursive; font-size: 80px; text-align: center; text-transform: uppercase; color: white; padding-top:10%;
+    font-family:'Averia Sans Libre', cursive; font-size: 44px; text-align: center; text-transform: capitalize; color: white; padding: 7% 10% 0 10%;
   }
   h3{
       font-family: 'Pacifico', cursive; font-size: 28px; text-align:center;color: #212F3C; padding-top:15px;
