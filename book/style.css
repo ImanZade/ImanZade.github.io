@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header{
+  min-height: 70px;
+  padding-top: 13px;
+  background-color: #fff;
+}
+#logo{
+  float: left;
+}
+#logo h1{
+  color: #FFC200;
+  font-family: 'Anton', sans-serif;
+  width: 30%;
+  font-size: 42px;
+  letter-spacing: 2px;
+  display: inline;
+  text-transform: uppercase;
+}
+#light{
+  color: #27CCA7;
+}
+nav{
+  width: 65%;
+  float: right;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  list-style: none;
+  float: left;
+  padding-left: 20px;
+  padding-top: 16px;
+  display: inline;
+}
+nav a{
+  color: #27CCA7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+nav a:hover{
+  color: #FFC200;
+  font-weight: bold;
+}
+#showcase{
+  background-image: url(img/books.jpeg);
+  background-size: cover;
+  min-height: 400px;
+  background-position: center;
+}
+#showcase h1{
+  font-size: 56px;
+font-family: 'Cormorant Garamond', serif;
+color: #fff;
+margin-top: 100px;
+text-align: center;
+font-weight: bold;
+text-shadow: 2px 2px 2px #000;
+}
+#showcase p{
+  font-size: 35px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #fff;
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+}
+#boxes{
+  padding-top: 22px;
+  background-color: lightgrey;
+  text-align: center;
+}
+.box{
+  width: 24%;
+  float: left;
+}
+.box img{
+  width: 80px;
+}
+.box h1{
+font-size: 18px;
+font-family: 'Josefin Slab', serif;
+font-weight: bold;
+}
+.box p{
+  font-size: 16px;
+  font-family: 'Josefin Slab', serif;
+}
+.box h3{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  color: #CC2762;
+  padding-bottom: 9px;
+}
+footer{
+  background-color: #B3DEC1;
+}
+.copy{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 25%;
+}
+.copy p{
+  font-family: 'Josefin Slab', serif;
+  float: left;
+}
+.newsletter{
+  width: 70%;
+  float: right;
+}
+.newsletter h1{
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  float: left;
+}
+.newsletter form{
+  float: right;
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+}
