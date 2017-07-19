@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body,html{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 80%;
+  margin: 0px auto;
+}
+.logo{
+  width: 25%;
+  float: left;
+  padding: 20px 0px;
+}
+.logo h2{
+
+}
+nav{
+  width: 70%;
+  float: right;
+  padding: 20px 0px;
+}
+nav ul{
+  float: left;
+}
+nav li{
+  list-style: none;
+  display: inline;
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 24px;
+
+  }
+nav p{
+  float: left;
+  padding-left: 24px;
+}
+#showcase{
+  background-image: url(paltaryuyan.jpg);
+  min-height: 400px;
+  clear: both;
+}
+#showcase h2{
+  font-size: 65px;
+  text-align: center;
+  padding-top: 120px;
+}
+#showcase p {
+  font-size: 30px;
+  text-align: center;
+}
+#info h2{
+  font-size: 31px;
+  text-align: center;
+  padding: 20px 0px;
+}
+#info p{
+
+  font-size: 21px;
+  text-align: center;
+  padding: 20px 0px;
+}
+input{
+  background-color: orange;
+  border: none;
+  padding: 11px 31px;
+  color: #fff;
+  font-size: 24px;
+  margin: 0px auto;
+  display: block;
+}
+#nece{
+  min-height: 230px;
+  margin-top: 20px;
+  background-color: #D5DBDB;
+
+}
+
+#nece .work{
+
+  text-align: center;
+  padding: 20px 0px;
+}
+#nece .qutu{
+float: left;
+  width: 100%;
+}
+#nece .boxes{
+  width: 30%;
+  float: left;
+  padding-right: 30px;
+}
+#nece .box{
+  width: 10%;
+float: left;
+}
+#nece .text{
+  width: 80%;
+float: right;
+text-align: center;
+}
+#xidmet{
+  text-align: center;
+  text-transform: uppercase;
+clear: both;
+padding-top: 22px;
+}
+#xidmet h2{
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#xidmet .box{
+    width: 30%;
+    float: left;
+    padding-left: 30px;
+  }
+#xidmet img{
+  width: 90px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  display: block;
+}
+#elaqe{
+  background-color: #F3F3F3;
+  clear: both;
+  padding-top: 20px;
+  text-align: center;
+}
+footer{
+
+  font-size: 18px;
+  line-height: 80px;
+  float: right;
+  padding-right: 80px; 
+}
