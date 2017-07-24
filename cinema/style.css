@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+padding: 0;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.logo{
+  width: 20%;
+  float: left;
+}
+.logo img{
+  width: 90px;
+}
+nav{
+  width: 75%;
+  float: right;
+}
