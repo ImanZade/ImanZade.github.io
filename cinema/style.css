@@ -190,7 +190,7 @@ footer p{
   .dark{
     width: auto;
     height: auto;
-    margin-left: 15px;
+    margin-left: 5px;
     margin-top: 320px;
     background-color: #2E294E
   }
@@ -203,14 +203,19 @@ footer p{
     margin-right:8px;
     padding: 1px 8px;
   }
-  .box{
-    display: block;
-    margin: 0 auto 10px auto;
-    width: 40%;
+  .cover{
+    margin: 0 auto;
+  }
+  .cover .box{
     float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
   }
   .box img{
+    display: block;
     width: 100px;
+    margin: 0 auto;
   }
   .box p{
     font-family: 'Quicksand';
