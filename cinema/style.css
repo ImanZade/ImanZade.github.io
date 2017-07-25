@@ -164,7 +164,7 @@ footer p{
     text-align: center;
   }
   .showcase{
-    background-position: left;
+    background-position: right;
   }
   .showcase h1{
     font-size: 28px;
@@ -183,7 +183,8 @@ footer p{
   }
   .box{
     text-align: center;
-    margin: 0 auto;
-    width: 50%;
+
+  margin-left: 30px;
+    width: 40%;
     margin-bottom: 11px;
   }
