@@ -6,9 +6,7 @@ padding: 0;
   width: 80%;
   margin: 0 auto;
 }
-header{
 
-}
 .logo{
   width: 20%;
   float: left;
@@ -16,8 +14,6 @@ header{
 }
 .logo img{
   width: 90px;
-  margin: 0;
-  padding: 0;
 }
 nav{
   width: 75%;
@@ -162,6 +158,7 @@ footer p{
   }
   nav{
     text-align: center;
+    padding-top: 4px;
   }
   .showcase{
     background-position: center;
@@ -191,10 +188,10 @@ footer p{
   text-decoration: none;
   }
   .dark{
-    width: 30%;
+    width: auto;
     height: auto;
-    margin-left:20px;
-    margin-top: 300px;
+    margin-left: 15px;
+    margin-top: 320px;
     background-color: #2E294E
   }
   .today a{
@@ -207,10 +204,9 @@ footer p{
     padding: 1px 8px;
   }
   .box{
-    text-align: center;
-    margin-left: 30px;
+    display: block;
+    margin: 0 auto 10px auto;
     width: 40%;
-    margin-bottom: 11px;
     float: left;
   }
   .box img{
