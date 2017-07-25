@@ -79,17 +79,40 @@ border-top: 1px solid black;
     float: none;
     width: 100%;
   }
+  header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav a{
+    padding-top: 15px;
+    font-size: 20px;
+    padding-left: 12px;
+  }
+
   #text{
     margin-bottom: 20px;
   }
   #text h1{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     padding-top: 25px;
 
   }
+  #text h3{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+  #text p{
+    font-size: 20px;
+  }
+  #text h6{
+    font-size: 20px;
+  }
+
   #img img{
-    padding-top: 30px;
+    padding-top: 10px;
     width: 100%;
   }
 }
