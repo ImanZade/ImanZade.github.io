@@ -6,14 +6,137 @@ padding: 0;
   width: 80%;
   margin: 0 auto;
 }
+header{
+
+}
 .logo{
   width: 20%;
   float: left;
+  margin-top: 5px;
 }
 .logo img{
   width: 90px;
+  margin: 0;
+  padding: 0;
 }
 nav{
   width: 75%;
   float: right;
+  padding-top: 26px;
+}
+
+nav li{
+  list-style: none;
+  display: inline;
+}
+nav a{
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: 'Josefin Slab';
+  padding-right: 28px;
+  color: #721817;
+  text-shadow: 0.4px 0.3px 0.4px black;
+}
+nav a:hover{
+  color: #D95D39;
+  font-weight: bold;
+}
+.showcase{
+  clear: both;
+  background-image: url(img/cat.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark{
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-left:20px;
+  margin-top: 200px;
+  background-color: #2E294E
+}
+.showcase h1{
+  text-align: center;
+   font-family: 'Bellefair';
+    font-style: normal;
+   font-size: 36px;
+   font-weight: bold;
+   color: #fff;
+   padding-bottom: 10px;
+
+}
+.showcase h4{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 24px;
+  font-family: 'Dosis';
+  font-style: normal;
+  color: red;
+}
+.showcase button{
+  background-color: red;
+
+  margin: 0 auto 30px auto;
+  display: block;
+
+  padding: 8px 20px;
+  border: none;
+}
+button a{
+  color: #fff;
+font-size: 18px;
+text-decoration: none;
+}
+.today{
+  text-align: center;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.today a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Quicksand';
+  font-size: 26px;
+  text-align: center;
+  display: inline;
+  border: 1px solid red;
+  border-radius: 3px;
+  margin-right:32px;
+  padding: 2px 30px;
+}
+.today a:hover{
+  color: #fff;
+  background-color: red;
+}
+.cover{
+  margin-top: 12px;
+  width: 100%;
+}
+.box{
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+  float: left;
+  margin-bottom: 11px;
+}
+.box p{
+  font-family: 'Quicksand';
+  font-size: 17px;
+  text-align: center;
+}
+.box button{
+  background-color: #FF5C38;
+  padding: 8px 20px;
+  border: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+footer{
+  width: 100%;
+  clear: both;
 }
