@@ -12,6 +12,7 @@ body,html{
   position: absolute; top: 2%; left: 1%; float: left;
 }
 nav{
+
 float: right;
 }
 nav ul{
@@ -34,4 +35,9 @@ footer{
 }
 footer p {
   font-family: 'Stoke', serif; color: #1F487E;
+}
+@media (max-width:768px) {
+  nav{
+    margin-top: 30px;
+  }
 }

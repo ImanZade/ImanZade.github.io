@@ -30,8 +30,20 @@ body,html{
 }
 h3{
   font-family: 'Archivo Black', sans-serif; font-size: 36px; text-align: center; text-transform: uppercase; padding-top: 2%;
-  
+
 }
 p{
   font-family:'Josefin Slab', serif; font-size: 28px; text-align: center; padding: 2% 4%;font-weight: 600;
+}
+@media (max-width:768px) {
+  nav{
+  text-align: center;
+  }
+  .info{
+    margin-top: 20px;
+  }
+  .background{
+    
+    margin-top: 20px;
+  }
 }
