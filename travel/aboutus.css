@@ -35,15 +35,20 @@ h3{
 p{
   font-family:'Josefin Slab', serif; font-size: 28px; text-align: center; padding: 2% 4%;font-weight: 600;
 }
-@media (max-width:768px) {
+@media (max-width:768px){
   nav{
+    width: 100%;
   text-align: center;
+  margin-top: 14px;
   }
-  .info{
-    margin-top: 20px;
-  }
-  .background{
-    
-    margin-top: 20px;
-  }
+  nav a {
+  padding-right: 20px;
+  line-height: 40px;
+}
+.info{
+  height: auto; position: absolute; top: 40%; z-index: 99;
+}
+.background{
+  background-color:#fff; background-size: cover; width: 100%; height:auto; position: absolute; top: 40%; opacity: 0.7; z-index: 1;
+}
 }
