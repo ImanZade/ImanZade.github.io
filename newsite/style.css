@@ -41,7 +41,7 @@ p{
   width: 36%; height: 86%; position: absolute; top: 10%;
 }
 @media (max-width:768px) {
-  .nav{ line-height: 70px; text-align: center; text-transform: uppercase;
+  .nav{ line-height: 60px; text-align: center; text-transform: uppercase;
     position: fixed; z-index: 99; width: 100%; background-color:#DE541E;}
   .nav a{
   text-decoration: none; font-family: 'Anton', sans-serif; font-size: 25px; color: white; margin-left: 24px;}
@@ -51,5 +51,8 @@ p{
   .info{
     width: 40%; height: 50%; position: absolute; top: 10%; left: 10%;
   }
-
+  h1 {
+    font-family:'Averia Sans Libre', cursive; font-size: 24px; text-align: center;
+     text-transform: capitalize; color: white; padding: 20px 40px;
+  }
 }
