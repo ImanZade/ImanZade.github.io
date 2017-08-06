@@ -40,3 +40,15 @@ p{
 .info{
   width: 36%; height: 86%; position: absolute; top: 10%;
 }
+@media (max-width:768px) {
+  .nav{ line-height: 90px;}
+  .nav a{
+   font-size: 33px; margin-left: 34px;}
+  .text{
+   height: 20%;
+   }
+   .info{
+     width: 40%; height: 50%; position: absolute; top: 10%; left: 10%;
+   }
+
+}
