@@ -68,4 +68,21 @@ p{
 .text p{
   font-family: 'Pacifico', cursive; font-size: 14px; text-align: center;color: #212F3C; padding-top: 15px; text-shadow: 1px 1px 1px #F6DDCC;
 }
+.photo1{
+  background-image: url(images/photo1mobile.jpeg); background-position: center;
+  background-size: cover; background-attachment: fixed;
+}
+.photo2{
+  background-image: url(images/photo2mobile.jpeg); background-position: center;
+   background-size: cover; background-attachment: fixed;
+}
+.photo3{
+  background-image: url(images/photo4mobile4.jpg); background-position: center;
+  background-size: cover; background-attachment: fixed;
+}
+.photo4{
+  background-image: url(images/photo4mobile.jpg); background-position: top-right;
+  background-size: cover; background-attachment: fixed; position: relative;
+}
+
 }
