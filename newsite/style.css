@@ -41,24 +41,31 @@ p{
   width: 36%; height: 86%; position: absolute; top: 10%;
 }
 @media (max-width:768px) {
-  .nav{ line-height: 20px; text-align: center; text-transform: uppercase;
+  .nav{ line-height: 40px; text-align: center; text-transform: uppercase;
     position: fixed; z-index: 99; width: 100%; background-color:#DE541E;}
   .nav a{
-  text-decoration: none; font-family: 'Anton', sans-serif; font-size: 19px; color: white; margin-left: 22px;}
+  text-decoration: none; font-family: 'Anton', sans-serif; font-size: 15px; color: white; margin-left: 16px;}
   .text{
     width: 100%; height: 30%; background-color:#B8DBD9;
   }
   .info{
     width: 40%; height: 50%; position: absolute; top: 10%; left: 10%;
   }
-  h1 {
-    font-family:'Averia Sans Libre', cursive; font-size: 16px; text-align: center;
-     text-transform: capitalize; color: white; padding: 20px 40px;
+  .info h3 {
+    font-family: 'Pacifico', cursive; font-size: 13px; text-align:center;color: #212F3C; padding-top:15px;
   }
-  h3{
+  .info p {
+  font-family: 'Pacifico', cursive; font-size: 11px; text-align: center;
+  color: #212F3C; padding-top: 15px; text-shadow: 1px 1px 1px #F6DDCC;
+  }
+  .text h1 {
+    font-family:'Averia Sans Libre', cursive; font-size: 16px; text-align: center;
+     text-transform: capitalize; color: white; padding: 20% 10%;
+  }
+  .text h3{
       font-family: 'Pacifico', cursive; font-size: 15px; text-align:center;color: #212F3C; padding-top:15px;
   }
-p{
+.text p{
   font-family: 'Pacifico', cursive; font-size: 14px; text-align: center;color: #212F3C; padding-top: 15px; text-shadow: 1px 1px 1px #F6DDCC;
 }
 }
