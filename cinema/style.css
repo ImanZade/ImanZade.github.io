@@ -16,6 +16,9 @@ padding: 0;
 .logo img{
   width: 90px;
 }
+#mobile{
+  display: none;
+}
 nav{
   width: 75%;
   float: right;
@@ -154,8 +157,13 @@ footer p{
   header{
     margin-bottom: 9px;
   }
-.logo{
+
+#desktop{
   display: none;
+}
+#mobile{
+  display: block;
+  width: 100%;
 }
   nav{
     text-align: center;
