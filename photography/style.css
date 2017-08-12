@@ -135,5 +135,10 @@ border-top: 1px solid black;
   }
   #artist-text h5{
     padding-bottom: 20px;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Athiti', sans-serif;
+    text-align: center;
+
   }
 }
