@@ -36,7 +36,7 @@ nav a{
   float: left;
 }
 #text h1{
-padding-top: 80px;
+padding-top: 60px;
   font-size: 80px;
   font-family: 'Text Me One', sans-serif;
   letter-spacing: 4px;
@@ -62,7 +62,22 @@ border-top: 1px solid black;
   font-size: 28px;
   font-family: 'Sunshiney', cursive;
 }
+#artist-text{
+  padding-top: 20px;
+}
+#artist-text h5{
+  width: 62%;
+  font-size: 25px;
+  font-family: 'Athiti', sans-serif;
+  text-align: justify;
+  float: left;
+}
+#artist-text img{
+  width: 30%;
+  float: right;
+}
 #img{
+  padding-top: 30px;
   display: block;
   margin: 0 auto;
   width: 55%;
@@ -75,7 +90,7 @@ border-top: 1px solid black;
 }
 
 @media (max-width:768px){
-  #text, #img, header nav{
+  #text, #img, header nav, #artist-text h5, #artist-text img{
     float: none;
     width: 100%;
   }
@@ -114,5 +129,11 @@ border-top: 1px solid black;
   #img img{
     padding-top: 10px;
     width: 100%;
+  }
+  #artist-text{
+    padding-top: 5px;
+  }
+  #artist-text h5{
+    padding-bottom: 20px;
   }
 }
