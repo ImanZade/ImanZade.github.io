@@ -14,7 +14,6 @@ span{
   color: orange;
 }
 nav li{
-
   display: inline-block;
 }
 nav a{
@@ -69,6 +68,14 @@ section{
   text-transform: uppercase;
 }
 @media (max-width:768px){
+  nav a{
+  line-height: 30px;
+  margin-right: 12px;
+  }
+  header p {
+    line-height: 70px;
+    font-size: 26px;
+  }
   .photo{
     width: 90%;
     float: none;
