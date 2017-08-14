@@ -10,6 +10,9 @@ bady, html{
   width: 80%;
   margin: 0 auto;
 }
+.current, span{
+  color: orange;
+}
 header{
   text-align: center;
   margin-top: 20px;
@@ -62,19 +65,25 @@ border-top: 1px solid black;
   font-size: 28px;
   font-family: 'Sunshiney', cursive;
 }
-#artist-text{
-  padding-top: 20px;
+.photographer{
+  width: 65%;
+  float: left;
+  padding-top: 30px;
+}
+.photographer-photo{
+  width: 30%;
+    float: right;
 }
 #artist-text h5{
-  width: 62%;
+
   font-size: 25px;
-  font-family: 'Athiti', sans-serif;
+  font-weight: lighter;
+  font-family: 'EB Garamond', sans-serif;
   text-align: justify;
-  float: left;
+
 }
 #artist-text img{
-  width: 30%;
-  float: right;
+width: 95%;
 }
 #img{
   padding-top: 30px;
@@ -88,7 +97,33 @@ border-top: 1px solid black;
   border-radius: 4px;
   width: 100%;
 }
+#contact-text{
+  padding-top: 30px;
+  text-align: justify;
+  font-family: 'EB Garamond', serif;
+}
+#contact-text h2{
+  color: orange;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+#contact-text a{
+  display: block;
+  color: orange;
+  padding-top: 14px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.left {
+  width: 35%;
+  float: left;
+  align-items: center;
 
+}
+.right{
+  width: 35%;
+  float: left;
+}
 @media (max-width:768px){
   #text, #img, header nav, #artist-text h5, #artist-text img{
     float: none;
