@@ -73,10 +73,11 @@ section{
   margin-right: 12px;
   }
   header p {
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 60px;
+    font-size: 22px;
   }
   .photo{
+    width: 100%;
     float: none;
     margin-bottom: 20px;
   }
@@ -84,7 +85,7 @@ section{
     width: 100%;
   }
   .text{
-    width: 90%;
+    width: 100%;
     float: none;
     margin-bottom: 20px;
   }
@@ -92,9 +93,7 @@ section{
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
-    font-family: 'Crimson Text', serif;
-    color: #4A235A;
-    text-align: center;
+    text-align: justify;
 
   }
 }
