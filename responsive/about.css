@@ -99,3 +99,51 @@ footer{
   background-color: orange;
   text-align: center;
 }
+@media (max-width:768px) {
+  header #branding, header nav{
+    float: none;
+  }
+  .container{
+    width: 90%;
+  }
+  header li{
+    font-size: 15px;
+    padding: 9px;
+  }
+  #newsletter{
+    padding:15px;
+
+  }
+  #newsletter h1{
+    float:none;
+  }
+  #newsletter form{
+
+    float: none;
+    margin-top: 10px;
+  }
+  #newsletter input[type="email"]{
+    margin-bottom: 7px;
+
+    width: 100%;
+  }
+  .button1{
+    width: 100%;
+  }
+  article#main-text{
+    width: 100%;
+    float: none;
+  }
+  article#main-text h1{
+    text-align: center;
+  }
+  aside#sidebar{
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    color: white;
+  }
+  aside#sidebar h3{
+ text-align: center;
+}
