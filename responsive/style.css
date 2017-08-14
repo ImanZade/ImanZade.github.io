@@ -114,10 +114,14 @@ footer{
   header #branding, header nav{
     float: none;
   }
+  .container{
+    width: 90%;
+  }
   header li{
     font-size: 15px;
     padding: 9px;
   }
+
   #showcase h1{
     margin-top: 70px;
     margin-bottom: 8px;
@@ -148,7 +152,7 @@ footer{
   }
   #boxes .box{
     float: none;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     text-align: center;
   }
