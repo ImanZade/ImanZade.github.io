@@ -32,6 +32,13 @@ nav li {
    color: white;
    padding-left: 40px;
  }
+ #red:hover{
+   color:red;
+ }
+ nav a:hover{
+   color:#2ECC71;
+ }
+
 article {
   padding-top: 24px;
 }
@@ -86,6 +93,7 @@ footer h5{
     text-align: center;
     padding-left: 18px;
   }
+
   article {
     padding-top: 30px;
   }
