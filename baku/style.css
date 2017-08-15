@@ -1,12 +1,44 @@
 @charset "utf-8";
 /* CSS Document */
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  width: 100%;
+  height: auto;
+}
 body {
   background-image: -webkit-linear-gradient(#F9EBEA, #D5F5E3);
-  margin: 0px;
-  padding: 8px 72px;
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+nav {
+   background:#1A5276;
+    }
+nav li {
+    list-style:none;
+    display:inline-block;
+    line-height: 80px;
+ }
+ nav a{
+   text-decoration: none;
+   text-transform: uppercase;
+   font: 22px bold Lato;
+   color: white;
+   padding-left: 40px;
+ }
+ #red:hover{
+   color:red;
+ }
+ nav a:hover{
+   color:#2ECC71;
+ }
 
-.header { background-image: url(images/baku-night.jpg);
+.header {
+  background-image: url(images/baku-night.jpg);
   background-position: center center;
   background-size: cover;
   height: 380px;
@@ -18,8 +50,8 @@ body {
   font-weight: 400;
   margin-top: 16px;
   text-align: center;
-  } 
-  
+  }
+
   h2 { color: #AAA;
   font-family: 'Dancing Script', sans-serif;
   font-size: 18px;
@@ -30,12 +62,63 @@ body {
   text-align: center;
   text-transform: uppercase;
   }
-  
-  p { color: #333;
+
+  p {
+    color: #333;
   font-family: 'Vollkorn', sans-serif;
   font-size: 16px;
   font-weight: 100;
   margin-top: 10px;
-  text-align: center;
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 15px;
   }
-  
+  footer {
+    background:#91A0B4;
+    height: 36px;
+    width:100%;
+    margin: 0 auto 10px auto;
+    border-radius:8px;
+  }
+  footer h5{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+  }
+  @media (max-width:768px) {
+    .container{
+      width: 86%;
+    }
+    nav li {
+        line-height: 60px;
+     }
+
+    nav a{
+      font-size: 16px;
+      text-align: center;
+      padding-left: 18px;
+    }
+
+    article {
+      padding-top: 30px;
+    }
+    p {
+      font-size: 21px;
+      padding-bottom: 24px;
+    }
+    img {
+      padding-bottom: 20px;
+      }
+      footer {
+        width: 86%;
+        margin: 0 auto 18px auto;
+      }
+      footer h5{
+        text-align: right;
+        font-size: 13px;
+        padding-right: 2px;
+        padding-top: 10px;
+      }
+  }
