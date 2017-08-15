@@ -38,7 +38,7 @@ nav li {
  }
 
 .header {
-  background-image: url(images/baku-night.jpg);
+  background-image: url(img/baku-night.jpg);
   background-position: center center;
   background-size: cover;
   height: 380px;
@@ -105,14 +105,14 @@ nav li {
       padding-top: 30px;
     }
     p {
-      font-size: 21px;
+      font-size: 19px;
       padding-bottom: 24px;
     }
     img {
       padding-bottom: 20px;
       }
       footer {
-        width: 86%;
+        width: 100%;
         margin: 0 auto 18px auto;
       }
       footer h5{
