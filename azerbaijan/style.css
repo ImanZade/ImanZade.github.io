@@ -100,4 +100,9 @@ footer h5{
       width: 86%;
       margin: 0 auto 18px auto;
     }
+    footer h5{
+      text-align: right;
+      font-size: 14px;
+      padding-right: 12px;
+    }
 }
