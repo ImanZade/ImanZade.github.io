@@ -73,3 +73,25 @@ footer h5{
   padding-right: 16px;
   padding-top: 9px;
 }
+@media (max-width:768px) {
+  .container{
+    width: 86%;
+  }
+  nav a{
+    font-size: 24px;
+    text-align: center;
+  }
+  article {
+    padding-top: 30px;
+  }
+  p {
+    font-size: 21px;
+    padding-bottom: 24px;
+  }
+  img {
+    padding-bottom: 20px;
+    }
+    footer {
+      margin: 0 auto 18px auto;
+    }
+}
