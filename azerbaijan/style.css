@@ -77,6 +77,10 @@ footer h5{
   .container{
     width: 86%;
   }
+  nav li {
+      line-height: 60px;
+   }
+
   nav a{
     font-size: 16px;
     text-align: center;
@@ -93,6 +97,7 @@ footer h5{
     padding-bottom: 20px;
     }
     footer {
+      width: 86%;
       margin: 0 auto 18px auto;
     }
 }
