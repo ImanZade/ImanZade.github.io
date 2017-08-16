@@ -142,6 +142,9 @@ footer{
   #logo, nav{
     float: none;
   }
+  .container{
+    width: 88%;
+  }
   header{
     padding-bottom: 20px;
   }
