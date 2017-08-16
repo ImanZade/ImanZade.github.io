@@ -19,7 +19,7 @@ header{
   color: #FFC200;
   font-family: 'Anton', sans-serif;
   width: 30%;
-  font-size: 42px;
+  font-size: 40px;
   letter-spacing: 2px;
   display: inline;
   text-transform: uppercase;
@@ -30,13 +30,6 @@ header{
 nav{
   width: 65%;
   float: right;
-}
-nav li{
-  list-style: none;
-  float: left;
-  padding-left: 20px;
-  padding-top: 16px;
-  display: inline;
 }
 nav a{
   color: #27CCA7;
@@ -55,7 +48,7 @@ nav a:hover{
 label{
   margin: 0 40px 0 0;
   font-size: 26px;
-  line-height: 70px;
+  line-height: 50px;
   display: none;
   width: 26px;
 }
@@ -171,7 +164,7 @@ footer{
   .menu a{
     display: block;
     border-bottom: 1px solid #EAEAEB;
-    margin: 0;
+    margin: 0 auto;
     line-height: 50px;
   }
   #toggle:checked + .menu{
