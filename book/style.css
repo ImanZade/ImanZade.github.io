@@ -31,10 +31,6 @@ nav{
   width: 65%;
   float: right;
 }
-nav ul{
-  margin: 0;
-  padding: 0;
-}
 nav li{
   list-style: none;
   float: left;
@@ -49,10 +45,22 @@ nav a{
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   font-weight: bold;
+  line-height: 70px;
+  margin-right: 10px;
 }
 nav a:hover{
   color: #FFC200;
   font-weight: bold;
+}
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+}
+#toggle{
+  display: none;
 }
 #showcase{
   background-image: url(img/books.jpeg);
@@ -149,6 +157,23 @@ footer{
     width: 100%;
     font-size: 24px;
     letter-spacing: 2px;
+  }
+  label{
+    display: block;
+    cursor: pointer;
+  }
+  .menu{
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .menu a{
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+  }
+  #toggle:checked + .menu{
+    display: block;
   }
   .box{
     width: 46%;
