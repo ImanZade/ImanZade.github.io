@@ -164,6 +164,7 @@ footer{
     display: none;
   }
   .menu a{
+    width: 100%;
     display: block;
     border-bottom: 1px solid #EAEAEB;
     margin: 0 auto;
