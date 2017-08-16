@@ -144,6 +144,11 @@ footer{
   header{
     padding-bottom: 20px;
   }
+  #logo h1{
+    width: 100%;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
   .box{
     width: 46%;
     padding-bottom: 20px;
@@ -165,8 +170,7 @@ footer{
     width: 100%;
   }
   .copy p{
-    float: right;
-        padding-top: 16px;
-    padding-bottom: 16px;
+        padding-top: 14px;
+        padding-bottom: 14px;
   }
 }
