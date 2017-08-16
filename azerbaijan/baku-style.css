@@ -37,14 +37,16 @@ nav li {
    color:#2ECC71;
  }
 
-.header {
-  background-image: url(img/baku-night.jpg);
+.showcase{
+  
+  background-image: url(img/night.jpg);
   background-position: center center;
   background-size: cover;
   height: 380px;
   width: 100%;
   }
-  h1 { color: rgba(248, 249, 249, 0.5);
+
+  .showcase h1 { color: rgba(248, 249, 249, 0.5);
   font-family: 'Dancing Script', sans-serif;
   font-size: 120px;
   font-weight: 400;
@@ -52,7 +54,7 @@ nav li {
   text-align: center;
   }
 
-  h2 { color: #AAA;
+  .showcase h2 { color: #AAA;
   font-family: 'Dancing Script', sans-serif;
   font-size: 18px;
   font-weight: 100;
