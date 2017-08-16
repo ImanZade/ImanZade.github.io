@@ -200,19 +200,20 @@ footer{
   }
   .copy p{
     line-height: 50px;
+    text-align: center;
     }
   .newsletter{
     width: 100%;
     float: none;
-    margin: 0 auto;
   }
   .newsletter h1{
     line-height: 50px;
     display: block;
-    margin: 0 auto;
+    text-align: center;
   }
   .newsletter form{
     display: block;
+    text-align: center;
   }
   .newsletter input[type="email"]{
     height: 23px;
