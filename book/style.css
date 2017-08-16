@@ -193,25 +193,33 @@ footer{
     width: 47%;
     padding-bottom: 20px;
   }
-  .newsletter{
-    width: 100%;
-  }
-  .newsletter h1{
-    padding-top: 15px;
-    padding-bottom: 5px;
-    text-align: center;
-    width: 100%;
-  }
-  .newsletter form{
-    text-align: center;
-    width: 100%;
-  }
   .copy{
-    margin: 0 auto;
     width: 100%;
+    float: none;
   }
   .copy p{
-        padding-top: 14px;
-        padding-bottom: 14px;
+    line-height: 40px;
+    }
+  .newsletter{
+    width: 100%;
+    float: none;
   }
+  .newsletter h1{
+    line-height: 40px;
+    display: block;
+  }
+  .newsletter form{
+    display: block;
+  }
+  .newsletter input[type="email"]{
+    height: 22px;
+    width: 193px;
+    padding-left: 7px;
+  }
+    .button1{
+      color: #fff;
+      background-color: orange;
+      border: none;
+      padding: 5px;
+    }
 }
