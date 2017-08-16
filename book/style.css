@@ -198,21 +198,22 @@ footer{
     float: none;
   }
   .copy p{
-    line-height: 40px;
+    line-height: 50px;
     }
   .newsletter{
     width: 100%;
     float: none;
+    margin: 0 auto;
   }
   .newsletter h1{
-    line-height: 40px;
+    line-height: 50px;
     display: block;
   }
   .newsletter form{
     display: block;
   }
   .newsletter input[type="email"]{
-    height: 22px;
+    height: 23px;
     width: 193px;
     padding-left: 7px;
   }
