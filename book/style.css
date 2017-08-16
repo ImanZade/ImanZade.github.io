@@ -110,27 +110,31 @@ footer{
   background-color: #B3DEC1;
 }
 .copy{
-  padding-top: 25px;
-  padding-bottom: 15px;
   width: 25%;
+  float: right;
 }
 .copy p{
   font-family: 'Josefin Slab', serif;
-  float: left;
-}
+  line-height: 60px;
+  }
 .newsletter{
   width: 70%;
-  float: right;
+  float: left;
 }
 .newsletter h1{
   font-family: 'Josefin Slab', serif;
   font-size: 20px;
-  float: left;
+  line-height: 60px;
+  display: inline;
 }
 .newsletter form{
-  float: right;
+  display: inline;
   font-family: 'Josefin Slab', serif;
-  font-size: 16px;
+}
+.newsletter input[type="email"]{
+  height: 22px;
+  width: 193px;
+  padding-left: 7px;
 }
   .button1{
     color: #fff;
