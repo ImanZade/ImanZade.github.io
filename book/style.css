@@ -155,7 +155,7 @@ footer{
   #logo h1{
     text-align: center;
     width: 100%;
-    font-size: 24px;
+    font-size: 27px;
     letter-spacing: 2px;
   }
   label{
@@ -171,6 +171,7 @@ footer{
     display: block;
     border-bottom: 1px solid #EAEAEB;
     margin: 0;
+    line-height: 50px;
   }
   #toggle:checked + .menu{
     display: block;
