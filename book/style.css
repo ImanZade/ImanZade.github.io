@@ -126,6 +126,7 @@ footer{
   font-size: 20px;
   line-height: 60px;
   display: inline;
+  margin-right: 14px;
 }
 .newsletter form{
   display: inline;
@@ -208,6 +209,7 @@ footer{
   .newsletter h1{
     line-height: 50px;
     display: block;
+    margin: 0 auto;
   }
   .newsletter form{
     display: block;
