@@ -38,7 +38,7 @@ nav li {
  }
 
 .showcase{
-  
+
   background-image: url(img/night.jpg);
   background-position: center center;
   background-size: cover;
@@ -115,12 +115,13 @@ nav li {
       }
       footer {
         width: 100%;
-        margin: 0 auto 18px auto;
+        margin: 0 auto 15px auto;
       }
       footer h5{
         text-align: right;
         font-size: 13px;
-        padding-right: 2px;
-        padding-top: 10px;
+        padding-right: 18px;
+        padding-top: 11px;
       }
+
   }
