@@ -159,7 +159,6 @@ footer{
     cursor: pointer;
   }
   .menu{
-    margin: 0 auto;
     width: 100%;
     text-align: center;
     display: none;
@@ -183,7 +182,7 @@ footer{
   }
 
   .box{
-    width: 46%;
+    width: 47%;
     padding-bottom: 20px;
   }
   .newsletter{
