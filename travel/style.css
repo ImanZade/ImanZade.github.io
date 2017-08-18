@@ -14,13 +14,8 @@ body,html{
 nav{
 float: right;
 }
-nav ul{
-  list-style: none;
-}
-nav ul li {
-  display: inline;
-}
-nav a {
+
+.menu a {
   text-align: center; text-decoration: none; text-transform: uppercase; padding-right: 40px;
    line-height: 80px; color: #CA1551; font-size: 26px;font-family: 'Bungee Shade', cursive;
 }
@@ -45,14 +40,24 @@ footer p {
   font-family: 'Stoke', serif; color: #1F487E;
 }
 @media (max-width:768px) {
+  nav{
+    width: 80%;
+
+  }
+  .logo{
+    width: 20%;
+    float: left;
+  }
   label{
     display: block;
     cursor: pointer;
+    float: right;
   }
   .menu{
     width: 100%;
     text-align: center;
     display: none;
+    float: right;
   }
   .menu a{
     width: 100%;
@@ -61,12 +66,13 @@ footer p {
     margin: 0 auto;
     line-height: 24px;
     font-size: 20px;
+    padding-right: 0px;
   }
   #toggle:checked + .menu{
     display: block;
   }
 
   .logo img{
-    width: 30%;
+    width: 100%;
   }
 }
