@@ -40,9 +40,9 @@ p{
 }
 @media (max-width:768px) {
   nav a {
-     padding-right: 14px;
-     line-height: 50px;
-      font-size: 14px;
+     padding-right: 7px;
+     line-height: 20px;
+      font-size: 12px;
   }
   .background{
     width: 100%; height:60%; position: absolute; top: 25%; opacity: 0.8; z-index: 1;
