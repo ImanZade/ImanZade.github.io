@@ -35,3 +35,6 @@ footer{
 footer p {
   font-family: 'Stoke', serif; color: #1F487E;
 }
+@media (max-width:768px) {
+
+}
