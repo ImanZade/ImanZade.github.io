@@ -30,7 +30,7 @@ label{
   font-size: 26px;
   line-height: 50px;
   display: none;
-  width: 26px;
+  width: 36px;
 }
 #toggle{
   display: none;
@@ -59,7 +59,7 @@ footer p {
     display: block;
     border-bottom: 1px solid #EAEAEB;
     margin: 0 auto;
-    line-height: 50px;
+    line-height: 18px;
   }
   #toggle:checked + .menu{
     display: block;
