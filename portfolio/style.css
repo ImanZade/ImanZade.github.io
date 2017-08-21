@@ -268,6 +268,7 @@ footer h4{
 	 }
 
 	 .social a{
+		 display: inline-block;
 		 margin: 0 auto;
 		 width: 24%;
 	 	 font-size: 17px;
