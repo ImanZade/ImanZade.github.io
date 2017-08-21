@@ -17,8 +17,16 @@ body{
 .cover{
 	width:100%;
 	height:auto;
- }
+}
 .cover img { display:block;  margin:1px auto 0 auto; }
+.main {
+	 width:100%;
+	 height:auto;
+	 margin: 18px auto;}
+.container {
+  width: 80%;
+	margin:0 auto; padding:0;}
+
 nav { background:#D5DBDB;
 	 width:100%;
 	 margin:0 auto;}
@@ -32,21 +40,24 @@ nav ul li a {
 	 color:#003;
 	 padding: 16px 100px;
  }
-article {float: right; width: 64%;
-	 height:370px;
+article {
+  width: 100%;
  }
-article h2 {
-	 font-family: 'IM Fell DW Pica SC', serif;
-	  font-size:24px;
-		 text-align:center;
-		 padding: 14px 0;
-	 }
-article p {
-	font-family: 'Junge', serif;
-	 font-size:18px;
-	  text-align:center;
-     padding: 15px;
-	}
+article img{
+  width: 30%;
+  margin: 0 auto;
+  display: inline-grid;
+  padding-bottom: 14px;
+}
+article img::before{
+  width: 30%;
+}
+article img::after{
+  width: 100%;
+}
+article img:hover{
+  width: 50%;
+}
 footer {
 	background:#999;
 	width:100%;
@@ -61,15 +72,3 @@ footer {
 		 padding-right: 40px;
     letter-spacing: 1px;
 	 }
-.resim { width:35%; height:auto; float:left;
-	}
-.resim img{
-	width: 90%;
-}
-.main {
-	 width:100%;
-	 height:auto;
-	 margin: 18px auto;}
-.container {
-width: 80%;
-	margin:0 auto; padding:0;}

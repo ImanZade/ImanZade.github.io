@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.name{
+  background: linear-gradient(rgba(255,255,255,0.3),  rgba(255,255,255,0.2)), url(img/code.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+h1{
+  color: lightgreen;
+  font-size: 66px;
+  letter-spacing: 2px;
+  font-family: 'Baloo Bhaijaan', cursive;
+  text-align: center;
+  padding: 80px 0 20px 0;
+}
+h3{
+  color: white;
+  font-size: 38px;
+  font-family: 'Iceland', cursive;
+  text-align: center;
+  padding: 5px 0 20px 0;
+}
+span{
+	color:lightgreen;
+}
+#about{
+  padding: 2% 3%;
+}
+h2{
+  font-size: 26px;
+  font-family: 'Iceland', cursive;
+  text-align: center;
+}
+p{
+  font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1px;
+  font-family: 'Crimson Text', serif;
+  text-align: justify;
+  padding: 2% 3%;
+}
+#work{
+	margin-bottom: 26px;
+	background-color: white;
+}
+.background{
+	padding: 4px;
+	margin: 0 auto;
+	width: 15%;
+	background-color: lightgreen;
+	margin-bottom: 20px;
+	border-radius: 5px;
+ }
+#work h2{
+	background: ligh
+  padding: 2px;
+	text-shadow: 1px 1px 1px white;
+}
+#left{
+  float: left;
+}
+#right{
+  float: right;
+}
+.image{
+  width: 48%;
+  height: 300px;
+}
+.image img{
+  width: 100%;
+}
+.text{
+  width: 48%;
+  height: 300px;
+}
+.text h4{
+	text-shadow: 1px 1px 1px lightgreen;
+	font-size: 28px;
+	font-family: 'Iceland', cursive;
+  text-align: center;
+  padding: 42px 0px 10px 0px;
+}
+.text p{
+text-align: center;
+padding: 10px 10px 20px 10px;
+}
+#work a{
+	width: 50%;
+	text-align: center;
+	letter-spacing: 1px;
+  background-color: white;
+  margin: 0 auto;
+  font-family: 'Crimson Text', serif;
+	display: block;
+	border: 2px solid lightgreen;
+	font-size: 22px;
+  padding: 6px 40px;
+  text-decoration: none;
+  color: lightgreen;
+}
+a:hover{
+  color: white;
+	background: lightgreen;
+}
+#contact{
+  margin: 0 auto;
+  width: 80%;
+  clear: both;
+  min-height: 60px;
+  background-color: lightgreen;
+}
+#contact h2{
+  font-size: 24px;
+  padding: 17px 10px;
+}
+#contact a{
+	color: white;
+	text-decoration: none;
+}
+#developer{
+  clear: both;
+  background-image: url(img/developer.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+}
+footer{
+  background-color: lightgreen;
+  min-height: 40px;
+  width: 80%;
+  margin: 0 auto;
+	margin-bottom: 1px;
+}
+footer h4{
+	font-size: 21px;
+	font-family: 'Iceland', cursive;
+	padding-top: 11px;
+	float: left;
+	width: 40%;
+}
+.social{
+	width: 45%;
+	float: right;
+	padding-top: 11px;
+}
+
+.social a{
+	font-size: 21px;
+	font-family: 'Iceland', cursive;
+	color: white;
+	text-decoration: none;
+	padding-right: 12px;
+}
+.social a:hover{
+	color: #8E44AD;
+}
+@media (max-width:768px) {
+	
+}

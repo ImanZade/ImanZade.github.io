@@ -6,13 +6,12 @@
  }
 body, html{
 	width: 100%;
-	height: auto;
+	height: 100%;
 	 }
 body{
 	margin:0;
 	padding:0;
 	background-image: -webkit-linear-gradient(#ECF0F1, #FAE5D3);
-
 }
 .cover{
 	width:100%;
@@ -32,10 +31,32 @@ nav ul li a {
 	 color:#003;
 	 padding: 16px 100px;
  }
-article {float: right; width: 64%;
-	 height:370px;
+ .main {
+ 	 width:100%;
+ 	 height:auto;
+ 	 margin: 18px auto;}
+ .container {
+ width: 80%;
+ 	margin:0 auto; padding:0;}
+article{
+  width: 100%;
+  height: 290px;
+}
+article img{
+  width: 13%;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.number {
+  float: left;
+   width: 45%;
  }
-article h2 {
+ .adress {
+   width: 45%;
+   float: right;
+ }
+article h3 {
 	 font-family: 'IM Fell DW Pica SC', serif;
 	  font-size:24px;
 		 text-align:center;
@@ -45,8 +66,9 @@ article p {
 	font-family: 'Junge', serif;
 	 font-size:18px;
 	  text-align:center;
-     padding: 15px;
+     padding: 25px;
 	}
+
 footer {
 	background:#999;
 	width:100%;
@@ -66,10 +88,3 @@ footer {
 .resim img{
 	width: 90%;
 }
-.main {
-	 width:100%;
-	 height:auto;
-	 margin: 18px auto;}
-.container {
-width: 80%;
-	margin:0 auto; padding:0;}
