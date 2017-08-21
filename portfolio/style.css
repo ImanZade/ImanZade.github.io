@@ -214,11 +214,19 @@ footer h4{
 		width: 90%;
 	}
 	h1{
-	  font-size: 40px;
-	  padding: 50px 0 15px 0;
+	  font-size: 38px;
+	  padding: 40px 0 15px 0;
 	}
 	h3{
-	  font-size: 37px;
+	  font-size: 36px;
 	  padding: 5px 0 20px 0;
 	}
+	#about h2{
+	  font-size: 30px;
+	  border-bottom: 1px solid lightgreen;
+	}
+	.background{
+		padding: 4px 24px;
+		width: 35%;
+	 }
 }
