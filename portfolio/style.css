@@ -268,8 +268,8 @@ footer h4{
 	 }
 
 	 .social a{
+		 margin: 0 auto;
 		 width: 24%;
 	 	 font-size: 17px;
-	 	 padding-right: 8px;
 	 }
 }
