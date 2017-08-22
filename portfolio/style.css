@@ -157,7 +157,7 @@ a:hover{
 }
 #contact{
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   clear: both;
   min-height: 60px;
   background-color: lightgreen;
@@ -175,7 +175,7 @@ a:hover{
   background-image: url(img/developer.jpg);
   background-position: center;
   background-size: cover;
-  width: 90%;
+  width: 80%;
   min-height: 300px;
   margin: 0 auto;
 }
