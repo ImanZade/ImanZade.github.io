@@ -1,0 +1,325 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header{
+  min-height: 70px;
+  padding-top: 13px;
+  background-color: #fff;
+}
+#logo{
+  float: left;
+}
+#logo h1{
+  color: #FFC200;
+  font-family: 'Anton', sans-serif;
+  width: 30%;
+  font-size: 40px;
+  letter-spacing: 2px;
+  display: inline;
+  text-transform: uppercase;
+}
+#light{
+  color: #27CCA7;
+}
+nav{
+  width: 65%;
+  float: right;
+}
+nav a{
+  color: #27CCA7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 70px;
+  margin-right: 10px;
+}
+nav a:hover{
+  color: #FFC200;
+  font-weight: bold;
+}
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 50px;
+  display: none;
+  width: 26px;
+}
+#toggle{
+  display: none;
+}
+#showcase{
+  width: 100%;
+  height: 50%;
+  margin-bottom: 30px;
+}
+/* Slider's parameters */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+
+}
+.mySlides img{
+  width: 100%;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  padding: 8px 12px;
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#showcase h1{
+  font-size: 50px;
+font-family: 'Cormorant Garamond', serif;
+color: #fff;
+font-weight: bold;
+text-shadow: 2px 2px 2px #000;
+}
+#showcase p{
+  font-size: 32px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #fff;
+  text-align: right;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+}
+#boxes{
+  padding-top: 22px;
+  background-color: lightgrey;
+  text-align: center;
+}
+.box{
+  width: 24%;
+  float: left;
+}
+.box img{
+  width: 80px;
+}
+.box h1{
+font-size: 18px;
+font-family: 'Josefin Slab', serif;
+font-weight: bold;
+}
+.box p{
+  font-size: 16px;
+  font-family: 'Josefin Slab', serif;
+}
+.box h3{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  color: #CC2762;
+  padding-bottom: 9px;
+}
+footer{
+  background-color: #B3DEC1;
+}
+.copy{
+  width: 25%;
+  float: right;
+}
+.copy p{
+  font-family: 'Josefin Slab', serif;
+  line-height: 60px;
+  }
+.newsletter{
+  width: 70%;
+  float: left;
+}
+.newsletter h1{
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  line-height: 60px;
+  display: inline;
+  margin-right: 14px;
+}
+.newsletter form{
+  display: inline;
+  font-family: 'Josefin Slab', serif;
+}
+.newsletter input[type="email"]{
+  height: 22px;
+  width: 193px;
+  padding-left: 7px;
+}
+  .button1{
+    color: #fff;
+    background-color: orange;
+    border: none;
+    padding: 5px;
+  }
+@media (max-width:768px) {
+  #logo, nav{
+    float: none;
+  }
+  .container{
+    width: 88%;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #logo h1{
+    text-align: center;
+    width: 100%;
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
+  nav{
+    width: 100%;
+  }
+  label{
+    display: block;
+    cursor: pointer;
+  }
+  .menu{
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .menu a{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0 auto;
+    line-height: 50px;
+  }
+  #toggle:checked + .menu{
+    display: block;
+  }
+  #showcase h1{
+    font-size: 39px;
+  margin-top: 105px;
+  }
+  #showcase p{
+    font-size: 26px;
+    margin-top: 16px;
+  }
+
+  .box{
+    width: 47%;
+    padding-bottom: 20px;
+  }
+  .copy{
+    width: 100%;
+    float: none;
+  }
+  .copy p{
+    line-height: 50px;
+    text-align: center;
+    }
+  .newsletter{
+    width: 100%;
+    float: none;
+  }
+  .newsletter h1{
+    line-height: 50px;
+    display: block;
+    text-align: center;
+  }
+  .newsletter form{
+    display: block;
+    text-align: center;
+  }
+  .newsletter input[type="email"]{
+    height: 23px;
+    width: 193px;
+    padding-left: 7px;
+  }
+    .button1{
+      color: #fff;
+      background-color: orange;
+      border: none;
+      padding: 5px;
+    }
+}
