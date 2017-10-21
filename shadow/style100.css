@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  width: 100%;
+  height: 100%;
+
+}
+body{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.last{
+  width: 100%;
+  height: 100%;
+  /*
+  -webkit-box-shadow: 1px 1px 6px 4px rgba(10,9,10,1);
+  -moz-box-shadow: 1px 1px 6px 4px rgba(10,9,10,1);
+  box-shadow: 1px 1px 6px 4px rgba(10,9,10,1);
+*/
+  background-color: #222222;
+  /* border-right: 1px solid #839192;  */
+  /* background-image: url(img/building.jpeg);  */
+}
+.right-angles{
+  position: absolute;
+  top: 7%;
+  left: 0;
+  color: white;
+}
+#left-first{
+  position: absolute;
+  top:90%;
+  left: 0;
+  color: white;
+}
+#left-second{
+  position: absolute;
+  top:90%;
+  left: 0;
+  color: white;
+}
+#left-third{
+  position: absolute;
+  top:90%;
+  left: 0;
+  color: white;
+}
+.third{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  height: 100%;
+  background-color: #202020;
+  border-right: 1px solid #839192;
+}
+.second{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 100%;
+  background-color: #112122;
+  border-right: 1px solid #839192;
+}
+.second-main{
+  float: left;
+  width: 96%;
+  height: 100%;
+}
+.narrow{
+  float: right;
+  width: 3%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.narrow a{
+  display: block;
+  transform: rotate(90deg);
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+.aboutme-text{
+    color: white;
+    text-align: center;
+}
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
+  height: 100%;
+  background-color: #202020;
+  border-right: 1px solid #839192;
+
+}
+.aboutme{
+  width: 100%;
+  height: 20%;
+}
+.aboutme-image{
+  width: 100%;
+  height: 60%;
+}
+.aboutme-image img{
+  width: 100%;
+}
+.text{
+  padding: 20px 50px;
+  color: white;
+  text-align: center;
+}
+.image{
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+.image img{
+  width: 100%;
+}
+nav{
+  float: left;
+  width: 70%;
+  padding: 20px 50px;
+  color: white;
+}
+nav p{
+  color: rgba(255, 255, 255, 0.5);
+}
+.social{
+  width: 12%;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  display: block;
+
+}
