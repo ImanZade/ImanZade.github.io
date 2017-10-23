@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shadow box</title>
+    <link rel="stylesheet" href="style100.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+  </head>
+  <body>
+    <section class="contact">
+      <aside class="narrow">
+        <a href="#"> Contact</a>
+         <i class="fa fa-angle-left left-angles" id="up-third" aria-hidden="true"></i>
+         <i class="fa fa-angle-right right-angles" id="down-third" aria-hidden="true"></i>
+            </aside>
+    </section>
+    <section class="portfolio" id="third">
+      <aside class="narrow">
+        <a href="#"> Portfolio</a>
+        <i class="fa fa-angle-left left-angles" id="up-second" aria-hidden="true"></i>
+          <i class="fa fa-angle-right right-angles" id="down-second" aria-hidden="true"></i>
+      </aside>
+    </section>
+    <section class="about" id="second">
+      <aside class="narrow">
+        <a href="#"> About</a>
+        <i class="fa fa-angle-left left-angles" id="up-first" aria-hidden="true"></i>
+        <i class="fa fa-angle-right right-angles" id="down-first" aria-hidden="true"></i>
+      </aside>
+    </section>
+
+    <section class="cover" id="cover">
+      <article class="info">
+        <div class="text">
+          <p>It is nice to see you on my portfolio page!</p>
+          <p>My name is Qochaq Imanzade. I am a passinate Junior Web Developer from Azerbaijan.
+             I like coding, reading about self-development and self-disipline, listen to good music.
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+             </p>
+        </div>
+      </article>
+      <div class="image">
+        <img src="img/working.jpg" alt="code">
+      </div>
+      <article class="contact-info">
+        <nav>
+          <p>email</p>
+          <a href="#">imanzade523@gmail.com</a>
+          <p>phone</p>
+          <a href="#">+994518771817</a>
+        </nav>
+        <nav class="social">
+          <a href="#">facebook</a>
+          <a href="#">youtube</a>
+          <a href="#">upwork</a>
+        </nav>
+      </article>
+    </section>
+
+    <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#up-first").click(function(){
+              $("#cover").animate({left: '-88%'}, 1300);
+
+            });
+            $("#up-second").click(function(){
+              $("#cover, #second").animate({left: '-100%'}, 1300);
+
+            });
+            $("#up-third").click(function(){
+              $("#cover, #second, #third").animate({left: '-100%'}, 1300);
+            });
+
+            $("#down-third").click(function(){
+              $("#third").animate({left: '0%'}, 1000);
+
+            });
+            $("#down-second").click(function(){
+              $("#second").animate({left: '0%'}, 1000);
+
+            });
+            $("#down-first").click(function(){
+              $("#cover").animate({left: '0%'}, 1000);
+            });
+    });
+        /*
+        $(document).ready(function(){
+    $("ac").onclick(function(){
+        $("cover").animate({right: '250px'});
+    });
+}); */
+
+        /*
+            $(function() {
+                $('social a').bind('click',function(event){
+                    var $anchor = $(this);
+                    $('cover').hide();
+                    /*
+
+                    /* if you want to use one of the easing effects:
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1500,'easeInOutExpo');
+                     /*
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);  */
+
+        </script>
+  </body>
+</html>

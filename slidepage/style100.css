@@ -6,50 +6,20 @@
 body, html{
   width: 100%;
   height: 100%;
-
 }
+
 body{
   width: 100%;
   height: 100%;
-
 }
-.last{
+
+.contact{
   width: 100%;
   height: 100%;
-  /*
-  -webkit-box-shadow: 1px 1px 6px 4px rgba(10,9,10,1);
-  -moz-box-shadow: 1px 1px 6px 4px rgba(10,9,10,1);
-  box-shadow: 1px 1px 6px 4px rgba(10,9,10,1);
-*/
   background-color: #222222;
-  /* border-right: 1px solid #839192;  */
-  /* background-image: url(img/building.jpeg);  */
+  border-right: 1px solid #839192;
 }
-.right-angles{
-  position: absolute;
-  top: 7%;
-  left: 0;
-  color: white;
-}
-#left-first{
-  position: absolute;
-  top:90%;
-  left: 0;
-  color: white;
-}
-#left-second{
-  position: absolute;
-  top:90%;
-  left: 0;
-  color: white;
-}
-#left-third{
-  position: absolute;
-  top:90%;
-  left: 0;
-  color: white;
-}
-.third{
+.portfolio{
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +28,8 @@ body{
   background-color: #202020;
   border-right: 1px solid #839192;
 }
-.second{
+
+.about{
   position: absolute;
   top: 0;
   left: 0;
@@ -67,10 +38,14 @@ body{
   background-color: #112122;
   border-right: 1px solid #839192;
 }
-.second-main{
-  float: left;
-  width: 96%;
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
   height: 100%;
+  background-color: #202020;
+  border-right: 1px solid #839192;
 }
 .narrow{
   float: right;
@@ -82,6 +57,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .narrow a{
   display: block;
   transform: rotate(90deg);
@@ -89,29 +65,29 @@ body{
   letter-spacing: 3px;
   text-decoration: none;
 }
-.aboutme-text{
-    color: white;
-    text-align: center;
-}
-.cover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 88%;
-  height: 100%;
-  background-color: #202020;
-  border-right: 1px solid #839192;
 
+.left-angles{
+  position: absolute;
+  top: 7%;
+  left: 0;
+  color: white;
 }
-.aboutme{
+.right-angles{
+  position: absolute;
+  top:90%;
+  left: 0;
+  color: white;
+}
+/* cover section */
+.info{
   width: 100%;
   height: 20%;
 }
-.aboutme-image{
+.info-image{
   width: 100%;
   height: 60%;
 }
-.aboutme-image img{
+.info-image img{
   width: 100%;
 }
 .text{
