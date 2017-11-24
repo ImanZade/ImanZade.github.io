@@ -17,7 +17,7 @@
     </section>
     <section class="portfolio" id="third">
       <section class="grid">
-      
+
       </section>
       <aside class="narrow">
         <a href="#"> Portfolio</a>
@@ -64,8 +64,8 @@
         <script type="text/javascript">
         $(document).ready(function(){
             $("#up-first").click(function(){
-              $("#cover").animate({left: '-88%'}, 1300);
-
+              $("#cover").animate(
+                {left: '-100%'}, 1300);
             });
             $("#up-second").click(function(){
               $("#cover, #second").animate({left: '-100%'}, 1300);
@@ -86,30 +86,7 @@
             $("#down-first").click(function(){
               $("#cover").animate({left: '0%'}, 1000);
             });
-    });
-        /*
-        $(document).ready(function(){
-    $("ac").onclick(function(){
-        $("cover").animate({right: '250px'});
-    });
-}); */
-
-        /*
-            $(function() {
-                $('social a').bind('click',function(event){
-                    var $anchor = $(this);
-                    $('cover').hide();
-                    /*
-
-                    /* if you want to use one of the easing effects:
-                    $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
-                    }, 1500,'easeInOutExpo');
-                     /*
-                    $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
-                    }, 1000);  */
-
-        </script>
+          });
+</script>
   </body>
 </html>
