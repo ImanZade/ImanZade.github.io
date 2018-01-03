@@ -9,10 +9,10 @@ body{
   overflow: hidden;
 }
 .orange{
-  color: orange;
+  color: blue;
 }
 header{
-  background: #35424a;
+  background: #f7b733;
   padding-top: 20px;
   min-height: 40px;
 }
@@ -50,13 +50,22 @@ header h4{
 #showcase img{
   float: right;
 }
-
+#showcase a{
+  text-decoration: underline;
+  color: blue;
+  display: block;
+}
+#showcase a:hover{
+  text-decoration: none;
+  color: orange;
+  display: block;
+}
 #boxes{
   margin-top: 20px;
 }
 #boxes .box{
-  float: left;
-  width: 23%;
+  margin: 0 auto;
+  width: 30%;
   padding: 10px;
   text-align: center;
 }
