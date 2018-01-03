@@ -18,11 +18,11 @@ header{
 #logo h1{
   color: #FFC200;
   font-family: 'Anton', sans-serif;
-  width: 30%;
   font-size: 40px;
   letter-spacing: 2px;
   display: inline;
   text-transform: uppercase;
+
 }
 #light{
   color: #27CCA7;
