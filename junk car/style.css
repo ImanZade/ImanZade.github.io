@@ -12,11 +12,12 @@ body{
   color: blue;
 }
 header{
-  background: #f7b733;
+  background: blue;
   padding-top: 20px;
   min-height: 40px;
 }
 header h4{
+  color: #fff;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -57,18 +58,20 @@ header h4{
   text-decoration: underline;
   color: blue;
   display: block;
+  width: 40%;
 }
 #showcase a:hover{
   text-decoration: none;
-  color: orange;
+  color: navy;
   display: block;
 }
 #boxes{
   margin-top: 20px;
 }
 #boxes .box{
+  float: left;
   margin: 5px auto 5px auto;
-  width: 40%;
+  width: 23%;
   padding: 10px;
   text-align: center;
   box-shadow: 1px 1px 2px 1px rgba(57,73,76,.35);
@@ -80,7 +83,7 @@ footer{
   padding: 15px;
   margin-top: 20px;
   color: white;
-  background-color: #f7b733;
+  background-color: blue;
   text-align: center;
 }
 .simple{
@@ -107,6 +110,7 @@ footer{
   }
   #showcase a{
     font-size: 18px;
+    width: 80%;
   }
   #boxes .box{
     float: none;
