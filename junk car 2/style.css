@@ -1,0 +1,104 @@
+body{
+   font: 15px/1.5 Arial, Helvetica, sans-serif;
+   padding: 0;
+   margin: 0;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.blue{
+  color: blue;
+}
+header{
+  background: blue;
+  padding-top: 20px;
+  min-height: 40px;
+}
+header h4{
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+#showcase{
+  min-height: 400px;
+  text-align: justify;
+}
+#green{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 28px;
+}
+#showcase h1{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 46px;
+  text-align: left;
+}
+#showcase h2{
+  text-align: left;
+}
+#showcase h3{
+  text-align: left;
+}
+#showcase p{
+  font-size: 20px;
+}
+.picture{
+  width: 30%;
+  float: right;
+  margin-left: 35px;
+}
+.text{
+  width: 64%;
+  float: left;
+}
+#showcase img{
+  float: right;
+  margin: 0 0 10px 25px;
+  box-shadow: 1px 1px 2px 1px rgba(57,73,76,.35);
+}
+
+footer{
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  background-color: #f7b733;
+  text-align: center;
+}
+.simple{
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width:768px) {
+  .container{
+    width: 90%;
+  }
+  #showcase h1{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 30px;
+  }
+  #showcase p{
+    font-size: 18px;
+    text-align: justify;
+  }
+  #showcase img{
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .picture{
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+  }
+  .text{
+    width: 100%;
+    float: none;
+  }
+}
