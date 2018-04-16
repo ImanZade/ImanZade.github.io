@@ -1,0 +1,263 @@
+body{
+
+}
+.site-title {
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+       font-family: 'Gugi', cursive;
+    line-height: 32px;
+        max-width: 310px;
+    padding: 15px 0px;
+}
+.site-title a {
+    color: #00AEFF;
+}
+.site-title a:hover,.site-title  a:visited {
+    color: #00AEFF;
+    text-decoration: none;
+}
+.contct-btn{
+ padding: 20px 0px;
+}
+.contct-btn a{
+        font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 12px;
+   font-weight: 500;
+    letter-spacing: 0.03em;
+        color: #fff;
+    background: #00AEFF;
+    float: right;
+border-radius: 4px;
+ font-family:'Ubuntu', sans-serif;
+}
+.contct-btn a:hover {
+    text-decoration: none;
+       color: #fff;
+    background:  #0095e6;
+
+}
+.junkdiv-bg{
+background-color: #2c3e50;
+padding: 120px 0px;
+}
+.junkdiv-bg .titles h1 {
+       color: #fff;
+    font-size: 50px;
+    margin: 3px 0 10px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family:'Black Han Sans', sans-serif;
+}
+.junkdiv-bg p {
+   font-size: 17px;
+    padding: 20px 0 30px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+
+}
+.junkdiv-bg .btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px 28px;
+    text-transform: uppercase;
+    background-color: #00AEFF;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.junkdiv-bg .btn:hover{
+    color: #fff;
+    background: #0095e6;
+}
+.junkdiv-bg img {
+    margin-top: 13px;
+}
+.padd-top {
+    padding: 44px 0;
+}
+.page-header {
+   margin: 0px !important;
+    border-bottom: none!important;
+    position: relative;
+padding-bottom: 20px!important;
+
+    }
+.section-header h1 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    color: #273039;
+        margin-top: 0px;
+        font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+}
+.section-header span {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #535353!important;
+    font-weight: 500;
+    margin: 0;
+}
+.item p {
+          font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    color: #737373;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.about-list p {
+      margin-bottom: 30px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #737373!important;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
+.about-list a{
+     font-size: 14px;
+    font-weight: 500;
+    padding: 9px 14px;
+    text-transform: uppercase;
+    background-color: #00AEFF;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 3px 0px 0px 3px;
+}
+.about-list a:hover {
+/*background: #2098d1;*/
+  text-decoration: none;
+       color: #fff;
+    background: #0095e6;
+
+}
+.padd-top img {
+    margin-top: -20px;
+}
+.border-radius {
+border-radius: 18px;
+}
+.blue{
+  color: #00AEFF;
+  font-family:'Ubuntu', sans-serif;
+}
+.services-section {
+    padding-bottom: 35px;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+.services-section .page-header {
+  margin: 0 0 17px!important;
+}
+.services-section .item {
+    padding: 0;
+    min-height: 80px;
+}
+.services-section .item .fa {
+    color: #00AEFF;
+    float: left;
+    margin-right: 15px;
+    font-size: 25px;
+    width: 50px;
+    border: 1px solid #00AEFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.services-section h6 {
+   text-transform: uppercase;
+    color: #727272;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0px;
+}
+.services-section {
+    font-size: 13px;
+    color: #737373;
+    line-height: 24px;
+    font-weight: 400;
+}
+.section-padding {
+    padding: 44px 0;
+}
+.services-section img {
+    margin-top: 43px;
+}
+.footer-bottom  {
+    background: #112134 none repeat scroll 0 0;
+    border-top: 1px solid #233346;
+    padding: 40px 0;
+}
+.footer-bottom .copyright {
+    color: #a1b1bc;
+    line-height: 24px;
+    margin: 10px 0;
+font-size: 13px;
+font-weight: 400;
+font-family: 'Ubuntu', sans-serif;
+letter-spacing: 1px;
+}
+.clearfix{
+    clear: both;
+}
+.stickytop{
+background-color: #fff;
+     position: fixed;
+    z-index: 999;
+    width: 100%;
+        top: 0px;
+
+}
+
+
+@media(max-width:767px){
+    .site-title {
+        max-width: none;
+    }
+    .contct-btn {
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+    .section-header h1 {
+           font-size: 30px;
+    }
+      .junkdiv-bg .titles h1 {
+
+    font-size: 38px;
+
+}
+.contct-btn a {
+
+    float: left;
+}
+.junkdiv-bg {
+    padding: 40px 0px;
+}
+.footer-bottom {
+
+    padding: 15px 0px;
+}
+.section-padding {
+    padding: 0px 0px;
+}
+.services-section img {
+    margin-bottom: 43px;
+}
+}
+@media(max-width:991px){
+.about-list a {
+
+    margin-bottom: 35px;
+}
+}
