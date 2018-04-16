@@ -58,7 +58,7 @@ header h4{
   text-decoration: underline;
   color: blue;
   display: block;
-  width: 40%;
+  width: 50%;
 }
 #showcase a:hover{
   text-decoration: none;
@@ -111,7 +111,7 @@ footer{
   }
   #showcase a{
     font-size: 18px;
-    width: 80%;
+    width: 100%;
   }
   #boxes .box{
     float: none;
