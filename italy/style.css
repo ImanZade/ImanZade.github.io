@@ -20,7 +20,11 @@
   }
 
 @media (max-width:768px) {
+<<<<<<< HEAD
  video{
+=======
+ section video{
+>>>>>>> 57ae129fe0914dc4cfe721953056d95f57f1130f
    width: 100%;
    height: auto;
  }
