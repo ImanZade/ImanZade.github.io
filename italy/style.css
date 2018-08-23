@@ -18,6 +18,10 @@
     justify-content: center;
     align-items: center;
   }
+  video{
+    height: 100%;
+    width: auto;
+  }
 
 @media (max-width:768px) {
  section video{
