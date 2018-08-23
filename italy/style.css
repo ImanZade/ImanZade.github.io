@@ -25,7 +25,7 @@
 
 @media (max-width:768px) {
  section video{
-   display: block;
+   display: block !important;
    width: 100%;
    height: auto;
  }
