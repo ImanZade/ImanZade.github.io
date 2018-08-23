@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+  html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+  }
+  section{
+    height: 100%;
+    width: 100%;
+    padding: auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+@media only screen and (max-width:768px) {
+  section{
+    width: 100%;
+  }
+ video{
+
+   max-width: 100%;
+   height: auto;
+    }
+    }
