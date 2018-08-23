@@ -14,17 +14,13 @@
     width: 100%;
     padding: auto;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 @media (max-width:768px) {
-<<<<<<< HEAD
- video{
-=======
- section video{
->>>>>>> 57ae129fe0914dc4cfe721953056d95f57f1130f
+   section video{
    width: 100%;
    height: auto;
  }
