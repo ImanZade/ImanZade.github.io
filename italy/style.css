@@ -19,13 +19,9 @@
   align-items: center;
   }
 
-@media only screen and (max-width:768px) {
-  section{
-    width: 100%;
-  }
+@media (max-width:768px) {
  video{
-
-   max-width: 100%;
+   width: 100%;
    height: auto;
-    }
+ }
     }
