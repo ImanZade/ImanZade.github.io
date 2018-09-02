@@ -81,11 +81,11 @@ p{
   font-family: 'Pacifico', cursive; font-size: 14px; text-align: center;color: #212F3C; padding-top: 15px; text-shadow: 1px 1px 1px #F6DDCC;
 }
 .photo1{
-  background-image: url(images/mountainMobile.jpeg); background-position: center;
+  background-image: url(images/mountainMobile.jpg); background-position: center;
   background-size: cover; background-attachment: fixed;
 }
 .photo2{
-  background-image: url(images/vinylMobile.jpeg); background-position: center;
+  background-image: url(images/vinylMobile.jpg); background-position: center;
    background-size: cover; background-attachment: fixed;
 }
 .photo3{
