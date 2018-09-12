@@ -320,7 +320,8 @@ li:nth-child(2) {
 
   #c0 {
     position: static;
-    width: 100%;
+    width: 90%;
+    margin: 0px auto;
     height: 500px;
     background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
     z-index: 300;
@@ -328,13 +329,15 @@ li:nth-child(2) {
   }
   #c1 {
     position: static;
-    width: 100%;
+    width: 90%;
+    margin: 0px auto;
     background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
     box-shadow: 0px 20px 100px #555;
     z-index: 300;
   }
   #c2 {
-    width: 100%;
+    width: 90%;
+    margin: 0px auto;
     position: static;
     z-index: 300;
     background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
