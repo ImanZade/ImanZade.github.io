@@ -1,4 +1,15 @@
-body{
+*{
+  margin: 0;
+  padding: 0;
+}
+  body, html{
+  width: 100%;
+  height: 100%;
+}
+main{
+  width: 100%;
+  height: 95%;
+}body{
    font: 15px/1.5 Arial, Helvetica, sans-serif;
    padding: 0;
    margin: 0;
@@ -10,11 +21,11 @@ body{
   overflow: hidden;
 }
 header{
-  background: #35424a;
+  background: #1a1a1d;
   color: #fff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid #c3073f;
 }
 header a{
   color: #fff;
@@ -42,7 +53,7 @@ header nav{
   margin-top: 10px;
 }
 header .highlight, header .current a{
-  color: orange;
+  color: #c3073f;
   font-weight: bold;
 }
 header a:hover{
@@ -69,19 +80,25 @@ header a:hover{
 }
 .button1{
   color: white;
-   background: orange;
+   background: #c3073f;
    border: none;
    padding-left: 20px;
    padding-right: 20px;
    height: 37px;
 }
-
-
-
-footer{
-  padding: 20px;
+.main-text h1{
+  font-size: 42px;
+  font-weight: bolder;
   margin-top: 20px;
+}
+.main-text h3{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+footer{
+  height: 5%;
   color: white;
-  background-color: orange;
+  background-color: #c2b9b0;
   text-align: center;
+  line-height: 300%;
 }
