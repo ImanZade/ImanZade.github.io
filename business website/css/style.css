@@ -4,7 +4,29 @@
   padding: 0px;
 }
 .section{
+  padding-top: 80px;
+}
+/*
+.section{
   margin-top: 20px;
+}
+*/
+.section h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  /* margin-top: 40px; */
+  }
+.section h2:after{
+  content: "";
+  display: block;
+  margin: 0px auto;
+  padding-top: 20px;
+  border-bottom: 1px solid #0cd98a;
+  width: 70%
+}
+.section p {
+  font-size: 17px;
 }
 /* Navigation */
 .main-menu{
@@ -56,20 +78,9 @@ ul.main-nav {
 }
 
 /* services */
-#services h2{
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 40px;
-  }
-#services h2:after{
-  content: "";
-  display: block;
-  margin: 0px auto;
-  padding-top: 20px;
-  border-bottom: 1px solid #0cd98a;
-  width: 70%
-}
+/* #services{
+  height: 100vh;
+} */
 .flex-grid {
   display: flex;
 }
@@ -79,4 +90,69 @@ ul.main-nav {
 }
 .flex-grid .col i {
   margin: 20px 0px;
+}
+/* About us */
+#about{
+  background:url(../img/coffee.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .about-text {
+  width: 600px;
+  padding: 25px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* Testimonials */
+/* for column view
+
+.testimonials-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-box img{
+  width: 90%;
+  border-radius: 50%;
+  display: block;
+  margin: 0px auto;
+}
+
+.testimonial-text{
+  padding: 20px 10px;
+  text-align: justify;
+}
+*/
+.testimonials-wrapper{
+  width: 60%;
+  margin: 0px auto;
+}
+.testimonials-wrapper .testimonial-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-image img{
+  width: 250px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.testimonial-box .name, .work{
+  font-weight: bold;
+  text-align:center;
+}
+.testimonials-wrapper .testimonial-text {
+  padding: 15px 0px;
+  text-align: center;
+}
+/* events */
+#events{
+  background-color: #009999;
+  color: #fff;
+}
+#events h2::after{
+  border-bottom: 1px solid #fff;
 }
