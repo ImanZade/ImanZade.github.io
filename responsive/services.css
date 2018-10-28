@@ -97,6 +97,9 @@ header a:hover{
 }
 footer{
   height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
   color: white;
   background-color: #c2b9b0;
   text-align: center;

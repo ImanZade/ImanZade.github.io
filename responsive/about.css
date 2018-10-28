@@ -21,7 +21,6 @@ main{
   margin: auto;
   overflow: hidden;
 }
-header{
   background: #1a1a1d;
   color: #fff;
   padding-top: 30px;
@@ -107,7 +106,9 @@ aside#sidebar{
 }
 footer{
   height: 5%;
-
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
   color: white;
   background-color: #c2b9b0;
   text-align: center;
@@ -124,6 +125,7 @@ footer{
     font-size: 15px;
     padding: 9px;
   }
+  header{
   #newsletter{
     padding:15px;
 
