@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <title>Imanzade - Web development</title>
+  </head>
+  <body>
+    <div class="shadow-div overlay">
+      <div class="container">
+        <aside class="sidebar">
+          <section class="logo">
+            <img src="img/heydar-aliyev-center-logo.png" alt="">
+          </section>
+          <section class="menu">
+            <i class="fas fa-bars"></i>
+          </section>
+          <section class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </section>
+        </aside>
+        <main>
+            <div class="language">
+              <p>Az</p>
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="main-text">
+              <!-- starts here -->
+
+              <div class="page-slider">
+            <!--    <div class="prev-btn"><span class="fa fa-angle-up"></span></div>
+                <div class="next-btn"><span class="fa fa-angle-down"></span></div>  -->
+                <div class="nav-dots">
+                  <div data-slide="1" class="nav-dot"> </div>
+                  <div data-slide="2" class="nav-dot"> </div>
+                  <div data-slide="3" class="nav-dot"> </div>
+                  <div data-slide="4" class="nav-dot"> </div>
+                  <div data-slide="5" class="nav-dot"> </div>
+                </div>
+                <div data-slide="1" class="panel">
+                  <div id="layer-1" class="trans-layer"></div>
+                  <section id="section-1" class="section">
+                    <div class="section-content">
+                      <h1>Klassik avtomobil sərgisi</h1>
+                      <p>Mərkəzin parkinqi, 3-cü mərtəbə</p>
+                      <button type="button" name="button" id="bilet">Bilet al</button>
+                    </div>
+                  </section>
+                </div>
+                <div data-slide="2" class="panel">
+                  <div id="layer-2" class="trans-layer"></div>
+                  <section id="section-2" class="section">
+                    <div class="section-content">
+                      <h1>Section 2</h1>
+                    </div>
+                  </section>
+                </div>
+                <div data-slide="3" class="panel">
+                  <div id="layer-3" class="trans-layer"></div>
+                  <section id="section-3" class="section">
+                    <div class="section-content">
+                      <h1>Section 3</h1>
+                    </div>
+                  </section>
+                </div>
+                <div data-slide="4" class="panel">
+                  <div id="layer-4" class="trans-layer"></div>
+                  <section id="section-4" class="section">
+                    <div class="section-content">
+                      <h1>Section 4</h1>
+                    </div>
+                  </section>
+                </div>
+                <div data-slide="5" class="panel">
+                  <div id="layer-5" class="trans-layer"></div>
+                  <section id="section-5" class="section">
+                    <div class="section-content">
+                      <h1>Section 5</h1>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+
+                <!-- NOTE:
+
+
+-->
+
+            </div>
+
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+          </nav>
+        </main>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+    $('.page-slider').each(function() {
+      var $slider =  $(this);
+      var numberOfSlides = $slider.find('.panel').length;
+
+      $slider.find('.panel:eq(0)').addClass('_active');
+      $slider.find('.nav-dot:eq(0)').addClass('active');
+
+      var $activeSlide = $slider.find('.panel._active');
+      var $nextBtn = $slider.find('.next-btn');
+      var $prevBtn = $slider.find('.prev-btn');
+
+      $('.nav-dot').on('click', function() {
+        var slideToGo = $(this).data('slide');
+        goToSlide(slideToGo);
+      });
+
+
+      $slider.on('slide.changed', function() {
+        console.log('slide changed !');
+        $('.nav-dot').removeClass('active');
+        var $activeDot = $('.nav-dot[data-slide="'+$('.panel._active').data('slide')+'"]');
+        $activeDot.addClass('active');
+      });
+
+      $nextBtn.on('click', function(event) {
+        nextSlide();
+      });
+
+      $prevBtn.on('click', function(event) {
+        prevSlide();
+      });
+
+
+      function nextSlide() {
+        $activeSlide = $slider.find('.panel._active');
+        var $nextSlide = $activeSlide.next('.panel');
+        $activeSlide.removeClass('_active');
+        $nextSlide.addClass('_active');
+
+        //$activeSlide = $nextSlide;
+
+        var slideIndex = $slider.find('.panel._active').index('.panel');
+        console.log(slideIndex);
+
+
+        if(slideIndex >= numberOfSlides || slideIndex <= -1 ) {
+          firstSlide();
+          $slider.trigger('slide.changed');
+
+        }else {
+          $slider.trigger('slide.changed');
+        }
+
+      }
+
+    function prevSlide() {
+        $activeSlide = $slider.find('.panel._active');
+
+        var $prevSlide = $activeSlide.prev('.panel');
+        //console.log($prevSlide);
+        $activeSlide.removeClass('_active');
+        $prevSlide.addClass('_active');
+        //$activeSlide = $prevSlide;
+
+        var slideIndex = $slider.find('.panel._active').index();
+        console.log(slideIndex);
+
+
+
+        if(typeof $prevSlide === 'undefined'|| $prevSlide === null || $prevSlide.length == -1 || slideIndex <= -1 ) {
+          lastSlide();
+          $slider.trigger('slide.changed');
+        } else {
+          $slider.trigger('slide.changed');
+        }
+
+      }
+
+      function firstSlide() {
+          $('.panel._active').removeClass('_active');
+          $slider.find('.panel:eq(0)').addClass('_active');
+          $activeSlide = $slider.find('.panel:eq(0)');
+
+      }
+
+        function lastSlide() {
+          //console.log('last');
+          $('.panel._active').removeClass('_active');
+          $slider.find('.panel').eq(numberOfSlides-1).addClass('_active');
+          //$activeSlide = $slider.find('.panel:eq(numberOfSlides)');
+
+      }
+
+      function goToSlide(slideToGo) {
+          $('.panel._active').removeClass('_active');
+          $slider.find('.panel').eq(slideToGo -1).addClass('_active');
+          $activeSlide = $slider.find('.panel').eq(slideToGo -1).addClass('_active');
+          $slider.trigger('slide.changed');
+      }
+
+    });
+
+    </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>
