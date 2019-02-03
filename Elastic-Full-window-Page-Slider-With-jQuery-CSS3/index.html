@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elastic Full-window Page Slider Demo</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-slider {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background: deepskyblue;
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.panel._active { z-index: 10; }
+
+.trans-layer, .section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.trans-layer {
+  background: #000;
+  transform: translateY(-100%) skew(0) rotate(0) scale(2);
+  border-radius: 50%;
+  transition: all 500ms ease-in-out;
+  transition-delay: 500ms;
+}
+
+._active .trans-layer {
+  transform: translateY(0) skew(0) rotate(0) scale(2);
+  transition-delay: 0ms;
+}
+
+.section {
+  transform: translateY(100%);
+  transition: all 500ms ease-in-out;
+  transition-delay: 0ms;
+  background: #343434;
+}
+
+._active .section {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.section-content {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: arial;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 500ms ease;
+  transition-delay: 0s;
+}
+
+._active .section-content {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 1000ms;
+}
+
+.nav-dots {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 40px;
+}
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.nav-dot.active { background: red; }
+
+.next-btn, .prev-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 20;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.next-btn {
+  bottom: 10px;
+  right: 14px;
+}
+
+.prev-btn {
+  top: 10px;
+  right: 14px;
+}
+</style>
+</head>
+
+<body>
+<div class="page-slider">
+  <div class="prev-btn"><span class="fa fa-angle-up"></span></div>
+  <div class="next-btn"><span class="fa fa-angle-down"></span></div>
+  <div class="nav-dots">
+    <div data-slide="1" class="nav-dot"> </div>
+    <div data-slide="2" class="nav-dot"> </div>
+    <div data-slide="3" class="nav-dot"> </div>
+    <div data-slide="4" class="nav-dot"> </div>
+    <div data-slide="5" class="nav-dot"> </div>
+  </div>
+  <div data-slide="1" class="panel">
+    <div id="layer-1" class="trans-layer"></div>
+    <section id="section-1" class="section">
+      <div class="section-content">
+        <h1>Elastic Full-window Page Slider Demo</h1>
+      </div>
+    </section>
+  </div>
+  <div data-slide="2" class="panel">
+    <div id="layer-2" class="trans-layer"></div>
+    <section id="section-2" class="section">
+      <div class="section-content">
+        <h1>Section 2</h1>
+      </div>
+    </section>
+  </div>
+  <div data-slide="3" class="panel">
+    <div id="layer-3" class="trans-layer"></div>
+    <section id="section-3" class="section">
+      <div class="section-content">
+        <h1>Section 3</h1>
+      </div>
+    </section>
+  </div>
+  <div data-slide="4" class="panel">
+    <div id="layer-4" class="trans-layer"></div>
+    <section id="section-4" class="section">
+      <div class="section-content">
+        <h1>Section 4</h1>
+      </div>
+    </section>
+  </div>
+  <div data-slide="5" class="panel">
+    <div id="layer-5" class="trans-layer"></div>
+    <section id="section-5" class="section">
+      <div class="section-content">
+        <h1>Section 5</h1>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script> 
+<script>
+$('.page-slider').each(function() {
+  var $slider =  $(this);
+  var numberOfSlides = $slider.find('.panel').length;
+  
+  $slider.find('.panel:eq(0)').addClass('_active');
+  $slider.find('.nav-dot:eq(0)').addClass('active');
+  
+  var $activeSlide = $slider.find('.panel._active');
+  var $nextBtn = $slider.find('.next-btn');
+  var $prevBtn = $slider.find('.prev-btn');
+  
+  $('.nav-dot').on('click', function() {
+    var slideToGo = $(this).data('slide');
+    goToSlide(slideToGo);
+  });
+  
+  
+  $slider.on('slide.changed', function() {
+    console.log('slide changed !');
+    $('.nav-dot').removeClass('active');
+    var $activeDot = $('.nav-dot[data-slide="'+$('.panel._active').data('slide')+'"]');
+    $activeDot.addClass('active');
+  });
+  
+  $nextBtn.on('click', function(event) {
+    nextSlide();
+  });
+  
+  $prevBtn.on('click', function(event) {
+    prevSlide();
+  });
+  
+
+  function nextSlide() {
+    $activeSlide = $slider.find('.panel._active');
+    var $nextSlide = $activeSlide.next('.panel');
+    $activeSlide.removeClass('_active');
+    $nextSlide.addClass('_active');
+    
+    //$activeSlide = $nextSlide;
+    
+    var slideIndex = $slider.find('.panel._active').index('.panel');
+    console.log(slideIndex);
+    
+    
+    if(slideIndex >= numberOfSlides || slideIndex <= -1 ) {
+      firstSlide();
+      $slider.trigger('slide.changed');  
+      
+    }else {
+      $slider.trigger('slide.changed');  
+    }
+    
+  } 
+  
+function prevSlide() {
+    $activeSlide = $slider.find('.panel._active');
+  
+    var $prevSlide = $activeSlide.prev('.panel');
+    //console.log($prevSlide);
+    $activeSlide.removeClass('_active');
+    $prevSlide.addClass('_active');
+    //$activeSlide = $prevSlide;
+    
+    var slideIndex = $slider.find('.panel._active').index();
+    console.log(slideIndex);
+    
+    
+  
+    if(typeof $prevSlide === 'undefined'|| $prevSlide === null || $prevSlide.length == -1 || slideIndex <= -1 ) {
+      lastSlide();
+      $slider.trigger('slide.changed');
+    } else {
+      $slider.trigger('slide.changed');  
+    }
+    
+  } 
+  
+  function firstSlide() {
+      $('.panel._active').removeClass('_active');
+      $slider.find('.panel:eq(0)').addClass('_active');
+      $activeSlide = $slider.find('.panel:eq(0)');
+      
+  }
+  
+    function lastSlide() {
+      //console.log('last');
+      $('.panel._active').removeClass('_active');
+      $slider.find('.panel').eq(numberOfSlides-1).addClass('_active');
+      //$activeSlide = $slider.find('.panel:eq(numberOfSlides)');
+
+  }
+  
+  function goToSlide(slideToGo) {
+      $('.panel._active').removeClass('_active');
+      $slider.find('.panel').eq(slideToGo -1).addClass('_active');
+      $activeSlide = $slider.find('.panel').eq(slideToGo -1).addClass('_active');
+      $slider.trigger('slide.changed');  
+  }
+    
+});
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
