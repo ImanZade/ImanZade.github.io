@@ -516,7 +516,8 @@ figure {
     */
     .porfolio-box{
       padding: 0px 20px;
-      width: 50%;
+	    /* edited from 50% */
+      width: 300px;
     }
     .port-img{
 	    /* edited from 100% */
