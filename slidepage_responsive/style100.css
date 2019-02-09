@@ -519,7 +519,8 @@ figure {
       width: 50%;
     }
     .port-img{
-      width: 100%;
+	    /* edited from 100% */
+      width: 200px;
     }
     .port-text h4{
       font-size: 16px;
