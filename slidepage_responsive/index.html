@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow box</title>
-    <link rel="stylesheet" href="style100.css">
+    <title>Imanzade Qochaq | Portfolio website | Web developer</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
   </head>
   <body>
-
-    <!-- Mobile Navigation -->
+<!--   Mobile Navigation   -->
      <div class="mobile-menu">
        <div class="container">
          <div class="icon-and-logo">
@@ -29,11 +29,9 @@
        </div>
      </div>
 
-
-
      <!-- Cover section -->
-
-         <section class="cover" id="cover">
+       <section class="cover" id="cover">
+          <div class="covercontainer">
            <article class="info">
              <div class="text">
                <p>It is nice to see you on my portfolio page!</p>
@@ -42,13 +40,12 @@
                   </p>
              </div>
            </article>
-           <div class="image">
-           <!-- removed cause responsive settings   <img src="img/working.jpg" alt="code">-->
-           </div>
+         <div class="image">
+      <!-- removed cause responsive settings   <img src="img/working.jpg" alt="code">-->
+         </div>
            <article class="contact-info">
              <h6 id="mobile-text">For best experience please visit with PC</h6>
              <div class="contact-details">
-
                <p>Email:</p>
                <a href="#">imanzade877@outlook.com</a>
                <p>Phone:</p>
@@ -60,14 +57,14 @@
                <a href="#">youtube</a>
              </div>
            </article>
+              </div>
          </section>
-     <!-- About me  -->
 
+     <!-- About me -->
          <section class="about" id="second">
            <div class="container">
              <div class="content">
                <div class="for750flex">
-
                <div class="con-image">
                  <img src="img/profile.jpg" alt="">
                </div>
@@ -95,12 +92,12 @@
          </section>
 
      <!-- Portfolio -->
-
          <section class="portfolio" id="third">
            <div class="container">
              <div class="content">
                <div class="flex-column">
-             <!-- removing rows to make it responsive  <div class="flex-row">  -->
+             <!-- removing rows to make it responsive
+             <div class="flex-row">    -->
                  <div class="porfolio-box">
                    <div class="port-img">
                    <figure>
@@ -135,7 +132,9 @@
                    </div>
                  </div>
 
-             <!-- removing rows to make it responsive    <div class="flex-row">  -->
+             <!-- removing rows to make it responsive
+
+              <div class="flex-row">    -->
                  <div class="porfolio-box">
                    <div class="port-img">
                      <figure>
@@ -186,26 +185,32 @@
     <section class="contact" id="contact">
       <div class="container">
         <div class="content">
-          <div class="flex">
-          <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.461452972184!2d49.744974674848095!3d40.43696108340177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403086877fd2f807%3A0x6276a88edf074453!2sChichek%2C+Baku%2C+Azerbaijan!5e0!3m2!1sen!2s!4v1540988665896" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="contact-flex">
+           <div class="contact-message">
+              <h3>Contact</h3>
+              <h1>Get In Touch.</h1>
+              <p class="lead">Interested in doing a project together?</p>
+           </div>
+          <div class="contact-form">
+            <h5>Send Me A Message</h5>
+            <form name="contact" id="contactForm" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+              <div class="form-field">
+                  <input name="name" type="text" placeholder="Name" value="" required="">
+                  <input name="email" type="email" placeholder="Email" value="" required="">
+                  <textarea name="message" placeholder="Message" rows="8" cols="8" required=""></textarea>
+                  <button type="submit" class="submitform">Submit</button>
+              </div>
+            </form>
           </div>
-          <div class="contact-info">
-            <h4>Our address</h4>
-            <p>Azerbaijan, Baku</p>
-            <p>Chichek district, 33 A</p>
-          </div>
-            </div>
         </div>
       </div>
+    </div>
       <aside class="narrow">
         <a href="#"> Contact</a>
          <i class="fa fa-angle-left left-angles fa-lg" id="up-third" aria-hidden="true"></i>
          <i class="fa fa-angle-right right-angles fa-lg" id="down-third" aria-hidden="true"></i>
        </aside>
-    </section>
-
-
+     </section>
 
 <!-- Javescript -->
 
@@ -215,23 +220,18 @@
         $(document).ready(function(){
             $("#up-first").click(function(){
               $("#cover").animate({left: '-88%'}, 1300);
-
             });
             $("#up-second").click(function(){
               $("#cover, #second").animate({left: '-100%'}, 1300);
-
             });
             $("#up-third").click(function(){
               $("#cover, #second, #third").animate({left: '-100%'}, 1300);
             });
-
             $("#down-third").click(function(){
               $("#third").animate({left: '0%'}, 1000);
-
             });
             $("#down-second").click(function(){
               $("#second").animate({left: '0%'}, 1000);
-
             });
             $("#down-first").click(function(){
               $("#cover").animate({left: '0%'}, 1000);
